@@ -207,7 +207,7 @@ public class VectorQuantization {
 
     public static void main(String[] args) {
         try {
-            VectorQuantization vq = new VectorQuantization("input.png", 4, 256);
+            VectorQuantization vq = new VectorQuantization("input.png", 8, 1024);
             vq.convertToGrayscale();
             List<double[]> blocks = vq.getBlocks();
             vq.generateCodebook(blocks);
